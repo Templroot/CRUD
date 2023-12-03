@@ -1,0 +1,118 @@
+/* =------------------CATEGORII -----------*/
+ .CATEGORII{
+
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 4px;
+ }
+ .Tovarin img{
+    max-height:400px; 
+     width:80%;
+     margin: 5px;
+     padding: 5px;
+ }
+ .Photo{
+  
+     padding:10px;
+ }
+ 
+ 
+ .Tovarin{
+
+       display: flex;
+    flex-direction: row;
+    /*align-items:stretch ;*/
+    text-align: center;
+    padding-bottom: 20px; 
+          /*background:red;*/
+
+    
+ }
+ .Tovar{
+/* display: flex;*/
+/*flex-direction: row;*/
+
+/*height:90%;*/
+margin-bottom: 4px;
+margin-top: 4px;
+padding:30px;
+ /*background:green;*/
+-webkit-box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+ }
+ .Textin{
+     text-align:left;
+     height:100%;
+      /*background:blue; */
+ }
+ .Tovar h1{
+    font-family: 'Russo One', sans-serif; }
+    .BtnBck{
+     margin: 5px;
+    padding: 5px;
+ font-size: 200%;
+ background:blue; /* Тестовый цвет */
+        
+    }
+.btn_T{
+    background:blue; /* Тестовый цвет */
+
+    }
+     hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+.zag_razdela{
+    text-align:center;
+}
+
+.Tovar_fm{
+margin-bottom: 4px;
+margin-top: 4px;
+padding:30px;
+-webkit-box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+box-shadow: 2px -12px 58px -2px rgba(0, 0, 0, 0.15);
+}
+
+.TextIN_fm{
+  text-align:left;
+     height:100%;
+}
+
+.Tovar_fm h1{
+  font-family: 'Russo One', sans-serif; 
+} 
+
+
+ .Tovarin_fm{
+    display: flex;
+    flex-direction: row;
+    align-items:stretch;
+    text-align: center;
+    padding-bottom: 20px; 
+ }
+
+.Tovarin_fm img{
+   max-height:400px; 
+   width:150px;
+   margin: 5px;
+   padding: 5px;
+}
+
+.Photo_fm{
+  width:250px;
+}
+
+@media (min-width:765px) and (max-width:1300px )
+{    
+    .Tovarin {
+      flex-direction: column;}
+    .Textin {
+        font-size: 100%;
+         margin-bottom: 10px;}
+}

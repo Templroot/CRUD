@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<style>
+@media only screen and (min-width: 768px) {
+ .dropdown:hover .dropdown-menu {
+ display: block;
+ margin-top: 0;
+ }
+}
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <a class="navbar-brand" href="guest_mainpage.php">Справочник</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+ </button>
+
+ <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <ul class="navbar-nav mr-auto">
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="guest_moroz.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Холодильники
+ </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <a class="dropdown-item" href="guest_moroz.php"> Морозильные камеры</a>
+ <a class="dropdown-item" href="guest_fridge.php">Холодильники</a>
+ <div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="guest_acs_fm.php">Аксессуары</a>
+ </div>
+ </li>
+
+ 
+ <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="guest_Plit.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Плиты
+ </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <a class="dropdown-item" href="guest_E_plit.php">Электрические плиты</a>
+ <a class="dropdown-item" href="guest_G_plit.php">Газовые плиты</a>
+ <div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="guest_A_plit.php">Аксессуары</a>
+ </div>
+ </li>
+
+   <li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+ Стиральные,Посудомоечные машины
+ </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+ <a class="dropdown-item" href="guest_Washer.php">Стиральные машины</a>
+ <a class="dropdown-item" href="guest_Dishwasher.php">Посудомоечные машины</a>
+ <div class="dropdown-divider"></div>
+ <a class="dropdown-item" href="guest_acs_wash.php">Аксессуары</a>
+ </div>
+ </li>
+ </ul>
+
+<button class="btn btn-outline-info my-2 my-sm-0"  type="button" onclick="window.location.href='login.php'" style="margin-left: 10px;">Вход</button>
+
+ </div>
+<!--/.nav-collapse -->
+</nav>
+<!--/.navbar -->
+<script>
+$('.dropdown-toggle').click(function(e) {
+ if ($(document).width() > 768) {
+ e.preventDefault();
+ var url = $(this).attr('href'); 
+ if (url !== '#') { 
+ window.location.href = url;
+ }
+ }
+});
+</script>
+</body>
+
+</html>
